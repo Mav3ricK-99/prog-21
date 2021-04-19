@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HTML 5 - Formulario LogIn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        .spanError
+        {
+            float:right;font-size:20px;color:rgba(240,0,0,0.7)
+        }
+        </style>
+    </head>
+    <script src="javascript/funciones.js" async defer></script>
+    <body>
+        <h2>LogIn</h2>
+        <section style="margin:auto;width:300px">
+            <br><br>
+            
+            <h4>Ingreso de credenciales</h4>
+            <br>
+            <hr>
+            <form action=# method="GET" id="formAlta">
+                <label>DNI:</label><input type="number" name="txtDni" min="1000000" max="55000000" style="margin-left: 50px;" id="txtDni"><span id="txtDniSpan" class="spanError" style="display:none">*</span><br>
+                <label>Apellido:</label><input type="text" name="txtApellido" style="margin-left: 23px;" id="txtApellido"><span id="txtApellidoSpan" class="spanError" style="display:none">*</span><br>
+                <hr>
+                <div style="display:flex;flex-direction:column;align-items:flex-end;">
+                <input type="submit" value="Limpiar" onclick="" onsubmit="return false" style="float: right;">
+                <input type="submit" value="Enviar" onclick="AdministrarValidacionesLogin();" onsubmit="return false" style="float: right;">
+                </div>
+            </form>
+        </section>    
+    </body>
+</html>
